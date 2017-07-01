@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+// Dado un desarrollador comprobar que el numero de maxibones es >=0
+
 package com.karumi.maxibonkata;
 
 import com.pholser.junit.quickcheck.generator.GenerationStatus;
