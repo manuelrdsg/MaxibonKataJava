@@ -1,6 +1,5 @@
  package com.karumi.maxibonkata;
 
- import com.pholser.junit.quickcheck.From;
  import com.pholser.junit.quickcheck.Property;
  import org.junit.runner.RunWith;
  import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;

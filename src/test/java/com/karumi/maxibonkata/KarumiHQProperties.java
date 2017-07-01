@@ -9,9 +9,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-// Dada una coleccion de desarrolladores el numero de helados en la nevera es >=2
-// Dada una coleccion de desarrolladores el numero de helados en la nevera es el esperado
-
 @RunWith(JUnitQuickcheck.class) public class KarumiHQProperties {
     @Property
     public void whenADeveloperOpenTheFridgeTheNumberLeftItHasToBeGreaterThanTwo(@From(DevelopersGenerator.class) Developer generatedDeveloper) {
@@ -36,16 +33,15 @@ import static org.junit.Assert.assertTrue;
 
     public int expectedValue(List<Developer> listDevelopers, KarumiHQs karumiHQ ) {
         int totalMaxibons = karumiHQ.getMaxibonsLeft();
-        for (Developer dev: listDevelopers) {
-            if( dev.getNumberOfMaxibonsToGrab() > totalMaxibons)
+        for (Developer dev : listDevelopers) {
+            if( dev.getNumberOfMaxibonsToGrab() > totalMaxibons )
                 totalMaxibons = 10;
             else
                 totalMaxibons -= dev.getNumberOfMaxibonsToGrab();
 
-            if(totalMaxibons <=2)
+            if ( totalMaxibons <=2 )
                 totalMaxibons += 10;
         }
-
         return totalMaxibons;
     }
 
