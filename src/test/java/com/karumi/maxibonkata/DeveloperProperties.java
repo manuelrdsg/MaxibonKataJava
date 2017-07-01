@@ -9,7 +9,7 @@
 
  @RunWith(JUnitQuickcheck.class) public class DeveloperProperties {
     @Property
-    public void whenADeveloperIsCreatedTheNumberOfMaxMaxibonsIsGreatterOrEqualsZero(int numOfMaxibons){
+    public void whenADeveloperIsCreatedTheNumberOfMaxMaxibonsIsGreatterOrEqualsZero(int numOfMaxibons) {
         Developer developer = new Developer("any name", numOfMaxibons);
 
         assertTrue(developer.getNumberOfMaxibonsToGrab() >= 0);
