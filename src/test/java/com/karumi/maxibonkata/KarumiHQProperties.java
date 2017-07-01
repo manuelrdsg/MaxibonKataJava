@@ -13,7 +13,6 @@ import static org.junit.Assert.assertTrue;
         KarumiHQs karumiHQ = new KarumiHQs();
         karumiHQ.openFridge(generatedDeveloper);
         assertTrue(karumiHQ.getMaxibonsLeft() >= 2);
-
     }
 
 }
